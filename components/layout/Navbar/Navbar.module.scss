@@ -1,0 +1,13 @@
+@import '@/styles/variable';
+
+
+.container{
+    padding: 1rem 3rem;
+}
+.navLink{
+    color: $primary;
+    transition: all ease 0.3s;
+    &:hover{
+        color: $purple-dark;
+    }
+}

@@ -1,0 +1,111 @@
+@import './uikit';
+
+@font-face {
+  font-family: "IRANYekan";
+  font-style: normal;
+  font-weight: 500;
+  src: local("IRANYekanBlackFaNum"), local("IRANYekanBlackFaNum"),
+    url("../static/iranFonts/IRANYekanBlackFaNum.ttf") format("truetype");
+  /* Modern Browsers */
+}
+@font-face {
+  font-family: "IRANYekan";
+  font-style: normal;
+  font-weight: 800;
+  src: local("IRANYekanBoldFaNum"), local("IRANYekanBoldFaNum"),
+    url("../static/iranFonts/IRANYekanBoldFaNum.ttf") format("truetype");
+  /* Modern Browsers */
+}
+@font-face {
+  font-family: "IRANYekan";
+  font-style: normal;
+  font-weight: 600;
+  src: local("IRANYekanExtraBlackFaNum"), local("IRANYekanExtraBlackFaNum"),
+    url("../static/iranFonts/IRANYekanExtraBlackFaNum.ttf") format("truetype");
+  /* Modern Browsers */
+}
+@font-face {
+  font-family: "IRANYekan";
+  font-style: normal;
+  font-weight: 800;
+  src: local("IRANYekanExtraBoldFaNum"), local("IRANYekanExtraBoldFaNum"),
+    url("../static/iranFonts/IRANYekanExtraBoldFaNum.ttf") format("truetype");
+  /* Modern Browsers */
+}
+@font-face {
+  font-family: "IRANYekan";
+  font-style: normal;
+  font-weight: 300;
+  src: local("IRANYekanLightFaNum"), local("IRANYekanLightFaNum"),
+    url("../static/iranFonts/IRANYekanLightFaNum.ttf") format("truetype");
+  /* Modern Browsers */
+}
+@font-face {
+  font-family: "IRANYekan";
+  font-style: normal;
+  font-weight: 400;
+  src: local("IRANYekanMediumFaNum"), local("IRANYekanMediumFaNum"),
+    url("../static/iranFonts/IRANYekanMediumFaNum.ttf") format("truetype");
+  /* Modern Browsers */
+}
+@font-face {
+  font-family: "IRANYekan";
+  font-style: normal;
+  font-weight: 400;
+  src: local("IRANYekanRegularFaNum"), local("IRANYekanRegularFaNum"),
+    url("../static/iranFonts/IRANYekanRegularFaNum.ttf") format("truetype");
+  /* Modern Browsers */
+}
+@font-face {
+  font-family: "IRANYekan";
+  font-style: normal;
+  font-weight: 300;
+  src: local("IRANYekanThinFaNum"), local("IRANYekanThinFaNum"),
+    url("../static/iranFonts/IRANYekanThinFaNum.ttf") format("truetype");
+  /* Modern Browsers */
+}
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'IRANYekan';
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html{
+  font-size: 16;
+}
+
+@media only screen and (max-width: 1000px){
+  html{
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 600px){
+  html{
+    font-size: 12px;
+  }
+}
+
+body{
+  direction: rtl;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.MuiOutlinedInput-adornedEnd{
+  padding-left: 3px !important;
+}
+
+.Toastify__toast{
+  font-family: "IRANYekan" !important;
+}

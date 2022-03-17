@@ -1,0 +1,38 @@
+@import './functions';
+
+// text align
+.text-right{
+    text-align: right !important;
+}
+.text-center{
+    text-align: center !important;
+}
+.text-left{
+    text-align: left !important;
+}
+
+// margin
+.my-auto{
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+.mx-auto{
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+
+// flex
+.d-flex{
+    display: flex !important;
+    gap: 0.5rem;
+}
+.justify-start{
+    justify-content: flex-start !important;
+}
+.justify-end{
+    justify-content: flex-end !important;
+}
+.justify-between{
+    justify-content: space-between !important;
+}

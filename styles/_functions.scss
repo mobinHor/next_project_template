@@ -1,0 +1,127 @@
+@import './variable';
+
+//font-size
+.fs-0{
+  font-size: 0.8rem;
+}
+@for $i from 1 through 5 {
+  .fs-#{$i} {
+    font-size: $i + rem !important;
+  }
+}
+@for $i from 1 through 5 {
+  .fs-m-#{$i} {
+    font-size: $i + 0.5 + rem !important;
+  }
+}
+
+// font weight
+@for $i from 400 through 900 {
+  .weight-#{$i} {
+    font-weight: $i !important;
+  }
+}
+
+//margins
+@for $i from 0 through 30 {
+  .m-#{$i} {
+    margin: $i + rem !important;
+  }
+}
+@for $i from 0 through 30 {
+  .mt-#{$i} {
+    margin-top: $i + rem !important;
+  }
+}
+@for $i from 0 through 30 {
+  .mb-#{$i} {
+    margin-bottom: $i + rem !important;
+  }
+}
+@for $i from 0 through 30 {
+  .ml-#{$i} {
+    margin-left: $i + rem !important;
+  }
+}
+@for $i from 0 through 30 {
+  .mr-#{$i} {
+    margin-right: $i + rem !important;
+  }
+}
+@for $i from 0 through 30 {
+  .my-#{$i} {
+    margin-top: $i + rem !important;
+    margin-bottom: $i + rem !important;
+  }
+}
+@for $i from 0 through 30 {
+  .mx-#{$i} {
+    margin-left: $i + rem !important;
+    margin-right: $i + rem !important;
+  }
+}
+
+//paddings
+@for $i from 0 through 30 {
+  .p-#{$i} {
+    padding: $i + rem !important;
+  }
+}
+@for $i from 0 through 30 {
+  .pt-#{$i} {
+    padding-top: $i + rem !important;
+  }
+}
+@for $i from 0 through 30 {
+  .pb-#{$i} {
+    padding-bottom: $i + rem !important;
+  }
+}
+@for $i from 0 through 30 {
+  .pl-#{$i} {
+    padding-left: $i + rem !important;
+  }
+}
+@for $i from 0 through 30 {
+  .pr-#{$i} {
+    padding-right: $i + rem !important;
+  }
+}
+@for $i from 0 through 30 {
+  .py-#{$i} {
+    padding-top: $i + rem !important;
+    padding-bottom: $i + rem !important;
+  }
+}
+@for $i from 0 through 30 {
+  .px-#{$i} {
+    padding-left: $i + rem !important;
+    padding-right: $i + rem !important;
+  }
+}
+
+// flex gaps
+@for $i from 0 through 5 {
+  .gap-#{$i} {
+    gap: $i + rem !important;
+  }
+}
+
+// width
+@for $i from 1 through 100 {
+  .w-#{$i} {
+    width: $i + vw !important;
+  }
+}
+
+@each $i in $palette {
+    .color-#{nth($i, 1)} {
+      color: nth($i, 2) !important;
+    }
+  }
+  
+@each $i in $palette {
+    .bg-#{nth($i, 1)} {
+        background: nth($i, 2) !important;
+    }
+}
