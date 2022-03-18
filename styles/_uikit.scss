@@ -27,6 +27,9 @@
     display: flex !important;
     gap: 0.5rem;
 }
+.flex-column{
+    flex-direction: column !important;
+}
 .justify-start{
     justify-content: flex-start !important;
 }
