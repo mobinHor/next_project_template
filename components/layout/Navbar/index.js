@@ -2,30 +2,25 @@ import React from 'react'
 import { Grid } from '@material-ui/core'
 import Link from 'next/link'
 import Image from 'next/image'
+import CustomBtn from '@/components/utils/CustomBtn'
 import styles from './Navbar.module.scss'
 
 const Navbar = () => {
 
-    const links = [
-        {id : 4 , text : 'ورود / ثبت نام' , url:'/login'},
-        {id : 1 , text : 'صفحه اصلی' , url:'/'},
-        {id : 2 , text : 'صفحه اصلی' , url:'/'},
-        {id : 3 , text : 'صفحه اصلی' , url:'/'},
-    ]
-
   return (
-    <Grid className={styles.container} justifyContent="flex-end" alignItems='center' container spacing={5}>
-        {links.map(l=>(
-            <Grid key={l.id} item>
-                <Link href={l.url}>
-                    <a className={styles.navLink}>
-                        {l.text}
-                    </a>
-                </Link>
-            </Grid>
-        ))}
+    <Grid className={styles.container} container justifyContent='space-between' alignItems="center">
         <Grid item>
-            <Image alt="" src="/logo.svg" width={40} height={40}/>
+            <Image alt="سبدگردانی آریل" width={60} height={50} src="/logo.png"/>
+        </Grid>
+        <Grid item>
+            <Grid container spacing={1}>
+                <Grid item>
+                    <CustomBtn style={{borderRadius:'6px'}} bgClass="solid" text="معرفی طرح‌های سبدگردانی"/>                
+                </Grid>
+                <Grid item>
+                    <CustomBtn style={{borderRadius:'6px'}} bgClass="primary" text="دریافت مشاوره رایگان"/>                
+                </Grid>
+            </Grid>
         </Grid>
     </Grid>
   )

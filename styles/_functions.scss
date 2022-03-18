@@ -107,12 +107,12 @@
   }
 }
 
-// width
-@for $i from 1 through 100 {
-  .w-#{$i} {
-    width: $i + vw !important;
-  }
-}
+// // width
+// @for $i from 1 through 100 {
+//   .w-#{$i} {
+//     width: $i + vw !important;
+//   }
+// }
 
 @each $i in $palette {
     .color-#{nth($i, 1)} {

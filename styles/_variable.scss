@@ -3,10 +3,14 @@ $secondary : #475975;
 $third : #64C2CB;
 $semi-light: #ECF3FF;
 $light: #fff;
+$dark: #020405;
+$semi-dark: #7F8186;
 
 $palette:
-    'primary' $primary
-    'secondary' $secondary
-    'third' $third
-    'semi-light' $semi-light
-    'light' $light
+    'primary' $primary,
+    'secondary' $secondary,
+    'third' $third,
+    'semi-light' $semi-light,
+    'light' $light,
+    'dark' $dark,
+    'semi-dark' $semi-dark,
