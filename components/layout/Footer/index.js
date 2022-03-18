@@ -54,7 +54,7 @@ const index = () => {
             {chunk.map(c=>(
               <li key={c}>
                 <Link href={'/'}>
-                  <a>
+                  <a className='weight-500'>
                     {c.name}
                   </a>
                 </Link>
@@ -66,7 +66,7 @@ const index = () => {
       <Grid item xs={3}>
       <ul className='d-flex flex-column gap-2'>
           {info.map(i=>(
-            <li className='d-flex gap-1' key={i.value}>
+            <li className='d-flex gap-1 weight-500' key={i.value}>
                 {i.icon}
                 {i.value}
             </li>
