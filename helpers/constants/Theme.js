@@ -12,7 +12,7 @@ export const theme = createTheme({
     overrides : {
         MuiButton : {
             root : {
-                fontWeight:'400'
+                fontWeight:'500'
             },
             contained : {
                 boxShadow : 'none'

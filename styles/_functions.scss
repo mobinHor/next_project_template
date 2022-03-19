@@ -114,6 +114,14 @@
   }
 }
 
+// radius
+@for $i from 1 through 100 {
+  .radius-#{$i} {
+    border-radius: $i + px !important;
+  }
+}
+
+
 @each $i in $palette {
     .color-#{nth($i, 1)} {
       color: nth($i, 2) !important;

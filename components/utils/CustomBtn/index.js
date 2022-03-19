@@ -28,7 +28,7 @@ const CustomBtn = (props) => {
     return (
         <Button 
             fullWidth={fullWidth} 
-            className={styles[bgClass]} 
+            className={styles.btn + ' ' + styles[bgClass]} 
             onClick={handleClick} 
             style={style}
             disabled={disabled || load} 
