@@ -30,6 +30,9 @@
 .flex-column{
     flex-direction: column !important;
 }
+.justify-center{
+    justify-content: center !important;
+}
 .justify-start{
     justify-content: flex-start !important;
 }
@@ -40,5 +43,19 @@
     justify-content: space-between !important;
 }
 .align-center{
-    align-items: center;
+    align-items: center !important;
+}
+.align-end{
+    align-items: flex-end !important;
+}
+.flex-wrap{
+    flex: wrap !important;
+}
+
+.pointer{
+    cursor: pointer !important;
+}
+
+.fullWidth{
+    width: 100%;
 }
